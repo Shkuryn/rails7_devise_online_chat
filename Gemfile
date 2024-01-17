@@ -46,9 +46,15 @@ gem "bootsnap", require: false
 
 gem 'devise'
 
+gem 'bootstrap', '~> 5.3.2'
+
+gem 'sassc-rails', '>= 2.1.2'
+gem 'sass-rails'
+gem 'mini_racer'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  # gem "debug", platforms: %i[ mri windows ]
+  gem "debug", platforms: %i[ mri windows ]
 end
 
 group :development do
@@ -67,3 +73,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "cssbundling-rails", "~> 1.3"
+
+gem "jsbundling-rails", "~> 1.2"
